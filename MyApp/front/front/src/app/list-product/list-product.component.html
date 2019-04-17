@@ -1,0 +1,78 @@
+<div align="center" class="pad">
+  <div class="container-fluid">
+      <body>
+        <div class="rightcolumn">
+          <div align="center">
+            <br>
+            <h2> Book Details</h2>
+          </div>
+          <div class="add">
+            <div class="w3-bar-item w3-button">
+              <!-- <i class="fa fa-search"></i> -->
+              <input type="text" placeholder="Search Book by Title"  [(ngModel)]="searchString" />
+
+            </div>
+            
+            
+
+          </div>
+          <table id="books">
+      
+            <thead>
+              <tr>
+
+                <th class="hidden">
+                  <span>Book ID
+                  </span>
+                </th>
+                <th>
+                  <span>Author
+                  </span>
+                </th>
+                <th>
+                  <span>Title
+                  </span>
+                </th>
+                <th>
+                  <span>Genre
+                  </span>
+                </th>
+                <th>
+                  <span>Price($)
+                  </span>
+                </th>
+                <th>
+                  <span>Publish_date
+                  </span>
+                </th>
+                <th>
+                  <span>Description
+                  </span>
+                </th>
+              </tr>
+
+            </thead>
+            <tbody>
+              <tr *ngFor="let p of myArrayList['value']|tableFilter:searchString:'title'">
+
+                <td class="hidden">{{p.book_id}}</td>
+                <td>{{p.author}}</td>
+                <td>{{p.title}}</td>
+                <td>{{p.genre}}</td>
+                <td>{{p.price}}</td>
+                <td>{{p.publish_date}}</td>
+                <td>{{p.description}}</td>
+              </tr>
+              <br>
+            </tbody>
+          </table>
+        </div>
+      </body>
+
+    
+
+  </div>
+
+</div>
+
+

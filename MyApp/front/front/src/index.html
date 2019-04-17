@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+
+    <script type="text/javascript">
+    window.history.forward();
+    function noBack() {
+        window.history.forward();
+    }
+</script>
+<head>
+  <meta charset="utf-8">
+  <title>Book Catalog</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body onload="noBack();" onpageshow="if (event.persisted) noBack();" >
+  <app-root></app-root>
+</body>
+</html>
