@@ -85,7 +85,7 @@ Accesing the Application
 Accesing the backend API
 ===============================
 
-# Open Browser and navigate to  http://localhost:4200/getAllBooks
+# Open Browser and navigate to  http://localhost:3000/getAllBooks
 
 
 
