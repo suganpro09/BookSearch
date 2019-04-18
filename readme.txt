@@ -4,7 +4,6 @@
 *A - Angular js
 *N - Node js
 
-
 ## Prerequisites
 Please install below prerequisites on your development machine:
 * Node.js - [Download & Install Node.js] (https://nodejs.org/en/download/) and the npm package manager. 
@@ -15,18 +14,18 @@ Please install below prerequisites on your development machine:
 ==========================
 
 1) Install MongoDB
-3) Run mongodb server:
+2) Run mongodb server:
 
 	>> cd C:\Program Files\MongoDB\Server\3.0\bin
 	>> md C:\data\db
-4) Mongo Connection:
+3) Mongo Connection:
 
 	>> cd C:\Program Files\MongoDB\Server\3.0\bin
 	>> mongod
 
 (Incase fo error with storage engine >> mongod.exe --storageEngine=mmapv1 )
 	
-5)Open new window (cmd)
+4)Open new window (cmd)
 
 	>> cd C:\Program Files\MongoDB\Server\3.0\bin
 	>> mongo
@@ -44,7 +43,6 @@ Outcome:
 	
   frontend - AngularInstall
  ========================
-
 	>> C:\MyApp\front\front
 	>> npm install -g @angular/cli
 	>> npm install
